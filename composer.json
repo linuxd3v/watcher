@@ -1,5 +1,5 @@
 {
-    "name": "hyperf/watcher",
+    "name": "linuxd3v/watcher",
     "description": "Hot reload watcher for Hyperf",
     "license": "MIT",
     "type": "library",

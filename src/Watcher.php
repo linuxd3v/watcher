@@ -77,7 +77,8 @@ class Watcher
                 }
             } else {
                 $ret = exec(sprintf('%s %s/vendor/hyperf/watcher/collector-reload.php %s', $this->option->getBin(), BASE_PATH, $file));
-                if ($ret['code'] === 0) {
+                $code = $ret['code'] ?? null;
+                if ($code === 0) {
                     $this->output->writeln('Class reload success.');
                 } else {
                     $this->output->writeln('Class reload failed.');
